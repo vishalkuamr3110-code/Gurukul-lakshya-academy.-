@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C158" />
+      <stop offset="25%" stop-color="#BF8D2C" />
+      <stop offset="50%" stop-color="#F3E7BE" />
+      <stop offset="75%" stop-color="#C59328" />
+      <stop offset="100%" stop-color="#996515" />
+    </linearGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#E5C158" />
+      <stop offset="40%" stop-color="#BF8D2C" />
+      <stop offset="70%" stop-color="#ECC86B" />
+      <stop offset="100%" stop-color="#9C6B18" />
+    </linearGradient>
+    <linearGradient id="pageGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E8C768" />
+      <stop offset="50%" stop-color="#FFF8E7" />
+      <stop offset="100%" stop-color="#D4A738" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background White Circle with Gold Border -->
+  <circle cx="500" cy="500" r="480" fill="#FFFFFF" stroke="url(#goldRing)" stroke-width="24" />
+
+  <!-- 1. TEACHER SILHOUETTE (Maroon #730F1E) -->
+  <g fill="#730F1E">
+    <!-- Cap/Turban -->
+    <path d="M 215 365 C 195 365 170 380 160 405 C 150 430 165 450 185 455 C 205 460 235 440 245 420 C 255 400 245 375 225 368 Z" />
+    <path d="M 200 370 C 220 360 250 375 255 405 C 260 430 240 455 210 455 C 175 455 160 425 170 395 C 180 375 195 370 200 370 Z" />
+    <!-- Face / Head Profile facing right -->
+    <path d="M 175 420 C 185 440 200 460 215 470 C 230 465 240 445 242 425 C 240 415 225 410 210 412 C 190 412 178 418 175 420 Z" />
+    <!-- Neck -->
+    <path d="M 205 465 L 230 465 L 235 500 L 195 500 Z" />
+    <!-- Blazer / Body -->
+    <path d="M 120 605 C 120 540 145 500 190 490 L 210 570 L 225 570 L 245 490 C 290 500 315 540 315 605 Z" />
+    <!-- Right Arm pointing forward with stick -->
+    <path d="M 290 535 C 315 545 340 565 375 585 C 390 580 405 565 415 550 C 375 525 330 500 290 535 Z" />
+  </g>
+
+  <!-- White Shirt & Tie cutouts on Teacher -->
+  <!-- Shirt Collar -->
+  <polygon points="205,490 225,550 212,500" fill="#FFFFFF" />
+  <polygon points="245,490 225,550 238,500" fill="#FFFFFF" />
+  <!-- Tie -->
+  <polygon points="222,505 228,505 232,545 225,565 218,545" fill="#730F1E" stroke="#FFFFFF" stroke-width="2" />
+
+  <!-- Pointer Stick (held in teacher's hand pointing at text) -->
+  <line x1="335" y1="565" x2="415" y2="480" stroke="#730F1E" stroke-width="8" stroke-linecap="round" />
+  <line x1="335" y1="565" x2="415" y2="480" stroke="#D4AF37" stroke-width="3" stroke-linecap="round" />
+
+  <!-- 2. OPEN BOOK IN FRONT -->
+  <g>
+    <!-- Base Maroon Book Cover -->
+    <path d="M 60 655 C 130 635 210 645 240 670 C 270 645 350 635 420 655 L 420 675 C 350 655 270 665 240 705 C 210 665 130 655 60 675 Z" fill="#730F1E" />
+    <!-- Gold / White Pages Left Page -->
+    <path d="M 75 640 C 135 615 210 625 235 660 L 235 650 C 210 615 135 605 75 630 Z" fill="url(#pageGold)" stroke="#730F1E" stroke-width="2" />
+    <path d="M 85 628 C 145 605 215 615 235 648 L 235 638 C 215 605 145 595 85 618 Z" fill="#FFFFFF" stroke="#730F1E" stroke-width="1.5" />
+    <!-- Gold / White Pages Right Page -->
+    <path d="M 405 640 C 345 615 270 625 245 660 L 245 650 C 270 615 345 605 405 630 Z" fill="url(#pageGold)" stroke="#730F1E" stroke-width="2" />
+    <path d="M 395 628 C 335 605 265 615 245 648 L 245 638 C 265 605 335 595 395 618 Z" fill="#FFFFFF" stroke="#730F1E" stroke-width="1.5" />
+  </g>
+
+  <!-- 3. BRAND TYPOGRAPHY -->
+  <!-- "Gurukul" -->
+  <text x="315" y="405" font-family="DejaVu Serif, Georgia, serif" font-size="118" font-weight="bold" fill="#730F1E" letter-spacing="-1">Gurukul</text>
+
+  <!-- "Lakshya" -->
+  <text x="335" y="520" font-family="DejaVu Serif, Georgia, serif" font-size="118" font-weight="bold" fill="#730F1E" letter-spacing="-1">Lakshya</text>
+
+  <!-- "Academy" -->
+  <text x="420" y="650" font-family="DejaVu Serif, Georgia, serif" font-size="124" font-weight="bold" fill="url(#goldText)" letter-spacing="1">Academy</text>
+
+  <!-- 4. GOLDEN FLOURISH UNDERLINE BENEATH ACADEMY -->
+  <g stroke="url(#goldText)" stroke-width="4" fill="none">
+    <line x1="450" y1="675" x2="670" y2="675" />
+    <path d="M 670 675 C 690 670 705 685 710 680 C 715 675 700 665 680 672" />
+    <path d="M 450 675 C 430 670 415 685 410 680 C 405 675 420 665 440 672" />
+    <!-- Center Diamond -->
+    <polygon points="690,683 695,688 690,693 685,688" fill="url(#goldText)" />
+    <line x1="720" y1="675" x2="900" y2="675" />
+  </g>
+
+  <!-- 5. GOLDEN FOUNTAIN PEN & OFFICIAL STAMP / SEAL -->
+  <!-- Fountain Pen (diagonal from top right) -->
+  <g>
+    <!-- Pen Barrel -->
+    <line x1="880" y1="315" x2="775" y2="520" stroke="url(#goldText)" stroke-width="12" stroke-linecap="round" />
+    <!-- Pen Nib -->
+    <polygon points="775,520 765,540 760,565 778,545" fill="url(#goldText)" stroke="#730F1E" stroke-width="1.5" />
+    <circle cx="769" cy="542" r="2.5" fill="#730F1E" />
+  </g>
+
+  <!-- Academy Seal / Stamp -->
+  <g fill="url(#goldText)" stroke="#9C6B18" stroke-width="2">
+    <!-- Top Knob -->
+    <circle cx="865" cy="460" r="16" />
+    <!-- Stem -->
+    <path d="M 855 476 L 875 476 L 880 500 L 850 500 Z" />
+    <!-- Base Plate -->
+    <rect x="830" y="500" width="70" height="20" rx="4" />
+    <rect x="815" y="520" width="100" height="24" rx="4" />
+  </g>
+</svg>
